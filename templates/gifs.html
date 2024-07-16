@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="../static/styles/styles.css">
+  </head>
+  <body>
+    {% if randomBool == True%}
+     <img src="{{random}}"/>
+    {% else%}
+     <h1> Sorry, no gifs found</h1>
+    {%endif%}
+    {% for gift in myGifs %}
+    <img src="{{gif}}"/>
+    {%endfor%}
+
+
+    
+</body>
+</html>
